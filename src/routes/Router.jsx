@@ -5,30 +5,29 @@ import Register from "../Pages/Register";
 import AddStore from "../Pages/AddStore";
 import EditStore from "../Pages/editStore";
 import App from "../App";
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
       {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "add",
-        element: <AddStore />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
-      {
-        path: "/",
+        index: true, // นี่จะตรงกับเส้นทางราก '/'
         element: <App />,
       },
       {
-        path: "edit-store/:id",
+        path: "login", // ลบสแลชนำหน้าออก
+        element: <Login />,
+      },
+      {
+        path: "register", // ลบสแลชนำหน้าออก
+        element: <Register />,
+      },
+      {
+        path: "add", // ลบสแลชนำหน้าออก
+        element: <AddStore />,
+      },
+      {
+        path: "edit-store/:id", // ลบสแลชนำหน้าออก
         element: <EditStore />,
       },
     ],
