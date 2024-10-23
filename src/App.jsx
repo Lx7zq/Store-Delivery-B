@@ -89,7 +89,7 @@ const App = () => {
 
   const handleEditStore = (id) => {
     // Navigate to the edit store page with the selected store's id
-    navigate(`edit-store/${id}`); // Ensure the path matches the router definition
+    navigate(`/edit-store/${id}`); // Ensure the path matches the router definition
   };
 
   const handleDeleteStore = async (id) => {

@@ -18,7 +18,7 @@ const Navbar = () => {
           <img
             src={Logo} // ใช้โลโก้ที่นำเข้า
             alt="DaliveryZone Logo"
-            className="w-16 h-16" // ปรับขนาดโลโก้
+            className="w-14 h-14" // ปรับขนาดโลโก้
           />
           <span className="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#50717b] to-[#3a4042]">
             DaliveryZone
